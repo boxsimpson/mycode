@@ -11,13 +11,18 @@ os = ['eos', 'junos', 'iosxr', 'nxos', 'nsox_ssh', 'ios'] #Only valid Devices pu
 x = ""
 while x not in os:                                        #While loop created for correct drivers input
     x = input("What is the drivers name?")
+
 #Input prompt for ip address
 y = input("What is your ip address?")
+
 #input prompt for username
 z = input("What is the current username?")
+
 #input prompt for password
 w = input("Provide the password...")
+
 # zconfig being set to function
 zconfig = shawnsimp(x,y,z,w)
+
 #printing running drivers
 print(zconfig["running"])
